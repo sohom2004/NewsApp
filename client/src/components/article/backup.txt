@@ -1,0 +1,24 @@
+import React from 'react';
+import Navbar from '../navbar/Navbar';
+import { useSelector } from 'react-redux';
+
+const Article = () => {
+    const x = useSelector((state) => state.article.selectedArticle)
+    const {url} = x;
+    console.log(url);
+
+    if (!x.title) {
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div>
+            <Navbar />
+            {x.image && <img src={x.image} alt={x.title} />}
+            <h1>{x.title}</h1>
+            <p>{x.content}</p>
+        </div>
+    );
+};
+
+export default Article;

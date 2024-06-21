@@ -1,0 +1,26 @@
+img{
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+
+svg{
+    display: none;
+}
+
+span{
+    display: none;
+}
+
+h4{
+    display: none;
+}
+
+li{
+    display: none;
+}
